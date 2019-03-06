@@ -6,6 +6,7 @@ let mazeGirl, scream, jep;
 function preload(){
   mazeGirl = loadImage("img/scary.jpg");
   scream = loadSound('sounds/scream.mp3');
+
   jep = loadSound('sounds/jep.mp3')
 
 }
@@ -40,6 +41,8 @@ function setup() {
   background(0);
   angleMode(DEGREES);
   imageMode(CENTER);
+
+  jep.setVolume(.05)
 }
 
 function draw() {
